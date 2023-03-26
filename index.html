@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <h1>Калькулятор чаевых</h1>
+        <form class="form">
+            <label>
+                Сумма по счету
+                <input type="text" class="AmountOnAccount">
+            </label>
+            <label> качество обслуживания
+            <select class="ServiceQuality">
+                <option value="0">Плохое(0%)</option>
+                <option value="5">Нормальное(5%)</option>
+                <option value="10">Хорошее(10%)</option>
+                <option value="15">Отличное (15%)</option>
+            </select>
+            </label>
+            <label>
+                Количество Человек
+                <input type="text" class="AmountOfPpl" >
+            </label>
+            <div class="nav">
+            <button type="submit" class="first">Посчитать</button>
+            <button type="reset" class="second">Сбросить</button>
+            </div>
+            <p>чаевые с человека:<span class="Tip"></span></p>
+            <p>Всего с человека:<span class="All"></span></p>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
